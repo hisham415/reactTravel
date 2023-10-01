@@ -1,0 +1,930 @@
+::placeholder {
+  color: #fff; /* Change the text color */
+  font-style: italic; /* Apply italic style */
+  font-size: 16px; /* Set the font size */
+  /* Add any other styles you want to apply to the placeholder text here */
+}
+.input-class::placeholder {
+  color: #ffffff; /* Change the text color */
+  /* Add any other styles you want to apply to the placeholder text here */
+}
+.containering {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.rowing {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.carding {
+  width: 33%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #ff41ff, #ff4b2b);
+  color: #fff;
+}
+
+.carding-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+/* .hovering{
+  border-radius: 20px;
+} */
+.square {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: #DF6951;
+  border-radius: 15px;
+  top: 80%;
+  right: 80%;
+  z-index: -9999;
+}
+
+.carding-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #ff41ff, #ff4b2b);
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 10px 5px;
+  transition: 0.3s;
+}
+.card-bodying {
+  background-color: white;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hoveringg:hover {
+    width: 100%;
+    transform: scale(1.1);
+    border-radius: 20px;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+
+  .hoveringg:hover .square {
+    display: block !important;
+    width: 100px;
+    height: 100px;
+    background-color: #DF6951;
+    border-radius: 15px;
+    top: 80%;
+    right: 80%;
+    z-index: -999;
+  }
+}
+
+/* Responsive media queries */
+
+.margening {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .carding {
+    width: 50%;
+  }
+  .review-icon{
+    position: absolute;
+    width: 14% !important;
+    bottom: 80% !important;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .containering {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .carding {
+    width: 100%;
+  }
+}
+
+.first-section {
+  background-image: url(./assets/Rectangle\ 19290.png);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  font-family: "poppins";
+  color: white;
+}
+#background-img {
+  width: 100%;
+  height: auto;
+  max-height: 40rem;
+  position: absolute;
+  z-index: -1;
+}
+.nav-container {
+  position: absolute;
+  font-size: larger;
+  margin-top: 1.5rem;
+  margin-left: 10rem;
+}
+#logo-edit {
+  position: relative;
+}
+/* Change the color of the prev and next indicators */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #f7f7f7; /* Change to your desired color */
+  color: #fff; /* Change the text color */
+  border: none; /* Remove the button border if desired */
+  /* You can also adjust padding, margin, and other styles as needed */
+}
+
+/* Change the color of the prev and next icons (optional) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #737373; /* Change to your desired color */
+  /* You can also use an image for the icon background */
+}
+
+/* Hover effect for the prev and next indicators (optional) */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #f7f7f7; /* Change to the desired hover color */
+}
+
+#submit-btn button {
+  border: 0px;
+}
+.xy {
+  background-color: #f7f7f7;
+}
+#arrow {
+  position: absolute;
+  top: 95%;
+  left: 5rem;
+  transform: translate(-50%, -50%);
+}
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.nav-link {
+  color: white;
+}
+.nav-item li a {
+  border-right: 1px solid #ccc;
+}
+.nav-link:hover {
+  color: white;
+}
+h3 {
+  color: white;
+  position: relative;
+  margin: 0;
+  font-family: "Volkhov";
+}
+.hamburger-btn {
+  background-color: inherit;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 20px;
+  margin: 0;
+}
+.line {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+.welcome {
+  font-family: "poppins";
+  font-size: 3.6rem;
+}
+.welcome-text {
+  max-width: 40rem;
+  line-height: 1.1;
+}
+#dropdownMenuButton {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.navigatorz {
+  margin-right: 20px;
+}
+#honeymoon-new{
+  width: 50%;
+}
+.dropdown-menu {
+  background-color: grey;
+}
+.tool-bar {
+  font-size: 2rem;
+  width: 100%;
+  padding: 5px;
+}
+#tools-section li a {
+  border: none;
+  border-right: 2px solid #ccc;
+  border-radius: 0px;
+}
+#tools-section li span {
+  border: none;
+  border-right: 2px solid #ccc !important;
+  border-radius: 0px;
+}
+
+.where-to {
+  background-color: transparent;
+  border: none !important;
+  font-size: 16px;
+  border-radius: 0px !important;
+}
+.where-to input {
+  border-color: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+.where-to input:focus-visible {
+  outline: none;
+}
+input {
+  font-size: 16px;
+  font-family: "poppins";
+  color: white;
+}
+.maging {
+  font-family: "poppins";
+}
+
+.honeymoon-div {
+  margin-top: 5rem;
+}
+
+#tools-section li:last-child a {
+  border-right: none;
+}
+#tools-section {
+  font-size: 20px;
+  font-weight: 200;
+  padding: 0 5px;
+  font-family: "poppins";
+  background-color: rgba(243, 243, 243, 55%);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: none;
+}
+#tools-section li {
+  padding: 8px;
+}
+.review-text {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  width: 50%;
+  border-radius: 15px;
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+.reviewer {
+  width: 100%;
+}
+.btn {
+  border: none;
+}
+.footer {
+  margin-bottom: 10px;
+}
+.reviewer {
+  font-weight: bolder;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.background-coloring {
+  background-color: #f7f7f7;
+}
+.colouring {
+  background-color: #f7f7f7;
+}
+.background-coloring div {
+  margin: auto 0;
+}
+#g {
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  background-color: 0;
+  border: 0;
+}
+.btn {
+  background-color: #df6951;
+}
+#profile-pic {
+  width: 15%;
+  height: 15%;
+}
+#profile-text {
+  font-size: 1rem;
+}
+.partners {
+  text-align: center;
+}
+.partners img {
+  width: 60%;
+}
+#scroll-section {
+  position: absolute;
+  left: 2%;
+  bottom: 0;
+  translate: 0 55%;
+}
+#circle-dotted {
+  width: 20%;
+  height: 80%;
+  z-index: 1;
+}
+.category {
+  font-size: 1rem;
+  font-family: "Poppins";
+  color: #df6951;
+  margin-bottom: 15px;
+}
+.best-services-text {
+  font-family: "volkhov";
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.card-img-adjust {
+  width: 30%;
+}
+.card {
+  border: none; /* This will remove the border */
+}
+#offers {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#offer-caption {
+  margin: auto 0;
+}
+.centering {
+  margin: auto 0;
+}
+#wrapping {
+  flex-flow: wrap;
+  margin-bottom: 80px;
+}
+.wrapper {
+  position: relative;
+}
+.elipses {
+  position: absolute;
+  top: 36%;
+  width: 76px;
+  height: 76px;
+}
+.span-text {
+  font-size: 10px;
+  margin: auto;
+}
+.card-title-edited {
+  font-family: "poppins";
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+}
+.stars {
+  width: 20%;
+  height: 10%;
+  margin: auto 0;
+}
+#honeymoon {
+  height: 500px;
+}
+ul {
+  font-family: "poppinss";
+  list-style-type: none;
+}
+ul div {
+  font-weight: bold;
+  font-size: 18px;
+  color: #5e6282;
+}
+ul p {
+  font-size: 16px;
+  color: #5e6282;
+  font-weight: 200;
+}
+.septratir {
+  margin-bottom: 150px;
+}
+.septratir img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.promotion-width {
+  width: 40rem;
+}
+.illustration-2{
+  top: -1%;
+}
+.adjusting-illustration{
+  margin-bottom: 150px;
+}
+.illustration-2 img {
+  top: -10% !important;
+  margin-top: 50px;
+  width: 100%;
+  height: 550px;
+}
+#xx {
+  position: relative;
+}
+.locations {
+  width: 17%;
+  margin-right: 50px;
+}
+.positioning {
+  margin-top: 2rem;
+}
+.explore {
+  width: 100%;
+  margin: 20px 0;
+}
+.btn-adjust-1 {
+  top: 55%;
+  right: 42%;
+  z-index: 99;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.btn-adjust-2 {
+  top: 55%;
+  right: 42%;
+  z-index: 99;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.btn-adjust-1:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.btn-adjust-2:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.adjust {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.width-adjusting-1 {
+  background-image: url(./assets/Explore-Nature\(1\).png);
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "poppins";
+  color: white;
+  height: 100%;
+  position: absolute;
+}
+.width-adjusting-2 {
+  background-image: url(./assets/Explore-Cities\(1\).png);
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "poppins";
+  color: white;
+  height: 100%;
+  position: absolute;
+}
+.packages {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 23px;
+}
+
+.price {
+  text-decoration: line-through;
+  font-size: 20px;
+  color: #7d7d7d;
+  margin: auto 0;
+}
+.offer-price {
+  font-family: "poppins";
+  font-size: 25px;
+  font-weight: bolder;
+  color: #df6951;
+}
+.footer-border-bottom {
+  border-bottom: 1px solid #e5e5ea;
+}
+
+.review-section {
+  background-image: url(./assets/h1-background-im.png);
+  background-size: cover; /* Adjust to your preference */
+  background-position: center;
+  height: 500px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review-card {
+  width: 128px;
+  height: 128px;
+  top: -40%;
+  left: 45%;
+}
+.review-card {
+  margin: auto 0;
+}
+.colouring .category {
+  padding-top: 20px;
+}
+.travel-concepts {
+  top: 30%;
+  left: -90%;
+  width: 40%;
+}
+.text-centering {
+  text-align: start !important;
+}
+#travel-concepts {
+  width: 15%;
+  left: 2%;
+  top: 60%;
+}
+.travel-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.booking-div {
+  width: 100%;
+}
+.planes {
+  width: 100%;
+  margin: 0 !important;
+}
+.paragraph-width {
+  max-width: 400px;
+}
+.footer-margin-bottom {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.review-icon{
+  position: absolute;
+  width: 8%;
+  bottom: 75%;
+}
+.footer {
+  /* Set the background image URL */
+  background-image: url("./assets/Footer-img.png");
+
+  background-repeat: no-repeat;
+  /* Set the background position to right (adjust as needed) */
+  background-position: right center;
+  /* Add padding or margin to the section for spacing (optional) */
+  padding: 80px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .card-img-adjust {
+    height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
+  }
+  .carding {
+    width: 100%;
+  }
+  #tools-section{
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #profile-text {
+    font-size: 0.5rem;
+  }
+  .centering {
+    padding-left: 20px;
+  }
+  #honeymoon-div img{
+    width: 100% !important;
+  }
+  div .review-icon{
+    position: absolute;
+    width: 20% !important;
+    bottom: 80% !important;
+  }
+  .planes {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .review-text {
+    width: 80%;
+    font-size: 10px;
+  }
+  .septratir {
+    margin-bottom: 50px;
+  }
+
+  .septratir img {
+    height: 20vh !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .first-section {
+    height: 70vh;
+  }
+
+  #editing {
+    font-family: "poppins";
+    position: absolute;
+    translate: -50%;
+    right: 12.2em;
+  }
+
+  #profile-pic {
+    width: 40%;
+  }
+  #scroll-section {
+    display: none;
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    translate: 0 55%;
+    aspect-ratio: 1/1;
+  }
+  #circle-dotted {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .partners img {
+    width: 80%;
+  }
+  .card-img-adjust {
+    width: 30%;
+  }
+  #offers {
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  #honeymoon {
+    width: 50%;
+  }
+  .flex-center {
+    margin-top: 15px;
+  }
+  .flex-center.col-5 {
+    width: 100%;
+  }
+  .booking {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .locations {
+    width: 100%;
+    margin-right: 0;
+  }
+  .illustration-2 {
+    display: none;
+  }
+  .coloumn {
+    flex-direction: column;
+  }
+
+  .footer div {
+    flex-direction: column;
+  }
+  .input-group input {
+    width: 100% !important;
+  }
+  .ggwp {
+    margin-bottom: 5rem !;
+  }
+  .review-card {
+    width: 128px;
+    height: 128px;
+    top: -20%;
+    left: 35%;
+  }
+
+  .explore .btn-adjust-1 {
+    padding: 5px;
+    font-size: 12px !important;
+  }
+  .explore .btn-adjust-2 {
+    padding: 5px;
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 512px) {
+  .welcome {
+    margin: 0 0;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #profile-pic {
+    width: 30%;
+    height: 15%;
+  }
+  .btn-adjust-2 {
+    font-size: 20px !important;
+  }
+  .btn-adjust-1 {
+    font-size: 20px !important;
+  }
+  .planes {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .footer-border-bottom img {
+    width: 40% !important;
+  }
+
+  .review-text {
+    width: 70%;
+  }
+
+  .welcome-text {
+    font-size: 0.5 em;
+  }
+  #offers {
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  .flex-center.col-5 {
+    width: 100%;
+  }
+  .coloumn {
+    flex-direction: column;
+  }
+  .illustration-2 {
+    display: none;
+  }
+  .romantic img {
+    margin: 0 auto !important;
+  }
+
+  .locations {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .svg-adjust {
+    margin-top: 6px;
+  }
+  .positioning {
+    margin-top: 2rem;
+  }
+  #honeymoon {
+    width: 50%;
+    height: 400px;
+  }
+  .booking {
+    width: 100%;
+  }
+  #editing {
+    position: absolute;
+    translate: -50%;
+    width: 100%;
+    left: 50%;
+  }
+  .explore {
+    flex-direction: column;
+  }
+  .navigatorz{
+    padding: 15px;
+    width: 100%;
+    margin-right: 0 ;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer div {
+    flex-direction: column;
+  }
+  .footer-border-bottom img {
+    width: 20%;
+  }
+  .input-group input {
+    margin: 0 auto !important;
+    width: 80% !important;
+  }
+  .input-group button {
+    margin: 0 auto !important;
+    width: 80% !important;
+  }
+  .input-group {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .review-icon{
+    position: absolute;
+    width: 10%;
+    bottom: 77%;
+  }
+  .honeymoon-div {
+    margin-top: 0;
+    margin-left: 0 auto;
+    width: 100%;
+  }
+  .btn-adjust-2 {
+    font-size: 10px;
+  }
+  .btn-adjust-1 {
+    font-size: 10px;
+  }
+  .honeymoon-div img {
+    margin-left: 10rem;
+  }
+  .hamburger-btn button {
+    background-color: inherit !important;
+  }
+  .maging {
+    font-family: "poppins";
+    position: absolute;
+    font-weight: 500;
+    width: 100%;
+    right: 0%;
+  }
+  .welcome-text {
+    font-size: 5vw;
+  }
+  .navigatorz {
+    background-color: rgb(247, 174, 174);
+    text-align: start;
+    margin-right: 0 !important;
+    background-color: rgba(243, 243, 243, 55%);
+    backdrop-filter: blur(10px);
+  }
+  #g {
+    font-weight: 200;
+    font-size: 1rem;
+    color: white;
+    background-color: 0;
+    border: 0;
+    font-weight: 500;
+  }
+  .nav-pad {
+    padding: 15px;
+  }
+  .navigatorz:hover {
+    background-color: rgb(217, 167, 167);
+  }
+  .booking {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
