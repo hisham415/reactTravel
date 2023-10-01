@@ -229,6 +229,7 @@ h3 {
 .welcome-text {
   max-width: 40rem;
   line-height: 1.1;
+  font-size: 57px;
 }
 #dropdownMenuButton {
   margin: 0;
