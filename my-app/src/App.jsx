@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect } from "react";
+import React from "react";
 import Dashboard from "./components/UI/Dashboard";
 import Home from "./components/UI/Home";
 import {

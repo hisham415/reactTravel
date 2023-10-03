@@ -56,12 +56,37 @@ body,html{
 /*==========================================================
   material-icon font-style end
   ================================*/
+  .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+.fade {
+    transition: opacity .15s linear;
+}
+.fade:not(.show) {
+    opacity: 1;
+}
   
-  
-  
-  h1,h2,h3,h4,h5,h6,.h1,.21,.h3,.h4{
+  h1,h2,h3,h4,h5,h6,.h1,.h3,.h4{
 	   font-weight:400;
-	   line-height;1.5em;
+	   line-height: 1.5em;
   }
   
   p{

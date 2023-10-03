@@ -2,8 +2,9 @@ import React, {useEffect} from "react";
 import DashboardTrow from "./DashboardTrow";
 
 const DashboardTable = (props) => {
-  
-      console.log('gg')
+    const isOpen = props.isOpen;
+    const setIsOpen = props.setIsOpen;
+    
     const fetchData = async ()=>{
       try{
         const response = await fetch(
@@ -17,7 +18,7 @@ const DashboardTable = (props) => {
     }
     useEffect(()=>{
       fetchData();
-        console.log('ff')
+        console.log('ff20')
       }, [])
   return (
     <table className="table table-striped table-hover">
@@ -36,7 +37,7 @@ const DashboardTable = (props) => {
       </thead>
       <tbody>
         {props.data.map((x) => (
-          <DashboardTrow data={x}></DashboardTrow>
+          <DashboardTrow data={x} isOpen={isOpen} setIsOpen={setIsOpen}></DashboardTrow>
         ))}
       </tbody>
     </table>
