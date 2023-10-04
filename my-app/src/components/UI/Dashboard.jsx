@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DashboardLayout from "./DashboardElements/DashboardLayout";
-
+import Navbar from '../FirstSectionElements/Navbar'
 const Dashboard = (props) => {
   const [data, setData] = useState([]);
   const fetchData = async ()=>{
@@ -20,9 +20,11 @@ const Dashboard = (props) => {
       console.log('ff')
     }, [])
 
-  return (
+  return (<div style={{backgroundColor: "grey"}}>
+    <Navbar></Navbar>
     <DashboardLayout data={data}>
     </DashboardLayout>
+  </div>
   );
 };
 

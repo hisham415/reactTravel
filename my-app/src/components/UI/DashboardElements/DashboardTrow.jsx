@@ -13,7 +13,7 @@ const DashboardTrow = (props) => {
           <label htmlFor="checkbox1"></label>
         </span>
       </td>
-      <td>{props.data.CityName}</td>
+      <td>{props.data.cityName}</td>
       <td>
         {props.data.description}
       </td>

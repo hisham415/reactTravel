@@ -1,13 +1,13 @@
 import React from "react";
 import Dropdown from "../Dropdown";
-import { BrowserRouter as Router, Route, Switch,Link } from "react-router-dom";
+import { BrowserRouter as Router, Route,Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="container py-5">
       <div className="row justify-content-between">
         <div id="logo-edit" className="col-2">
-          <a href="www.google.com">
+          <a href="/">
             <div className="logo-container position-relative d-flex justify-content-center flex-column">
               <h3>Travel</h3>
               <img src="./assets/Arrow 05.png" alt="" id="arrow" />
@@ -33,12 +33,10 @@ const Navbar = () => {
           <div className="d-xl-block navbar-collapse" id="editing">
             <ul className="navbar-nav d-xl-flex justify-content-xl-evenly flex-xl-row text-center maging">
               <li className="nav-item nav-pad navigatorz hovering">
-                <Link className="nav-link active" aria-current="page" to="/dashboard" >Dashboard</Link>
+                <Link className="nav-link active" aria-current="page" to="/dashboard" style={{color: "white"}} >Dashboard</Link>
               </li>
               <li className="nav-item nav-pad navigatorz hovering">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
+                <Link rel="stylesheet"className="nav-link active" aria-current="page" to="/" style={{color: "white"}}>Home</Link>
               </li>
               <li className="nav-item nav-pad navigatorz hovering">
                 <a className="nav-link" href="#">

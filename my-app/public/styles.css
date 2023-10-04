@@ -840,6 +840,8 @@ ul p {
     translate: -50%;
     width: 100%;
     left: 50%;
+    z-index: +11;
+
   }
   .explore {
     flex-direction: column;

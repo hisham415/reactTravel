@@ -7,11 +7,11 @@ const Card = (props)=>{
           <div className="margening">
             <div className="card wrapper">
               <img
-                src={props.data.img}
+                src={props.data.imageCity}
                 className="packages"
                 alt="..."
               />
-              <img src={props.data.flag} className="elipses" alt="" />
+              <img src={props.data.imageFlag} className="elipses" alt="" />
               <div className="d-flex gap-5">
                 <div className="d-flex justify-content-start">
                   <svg
@@ -46,7 +46,7 @@ const Card = (props)=>{
               </div>
               <div className="card-body m-0 p-0">
                 <div className="d-flex justify-content-between">
-                  <div className="card-title-edited">{props.data.CityName}</div>
+                  <div className="card-title-edited">{props.data.cityName}</div>
                   <img
                     src="./assets/Group 1000001721.png"
                     className="stars"
@@ -72,7 +72,7 @@ const Card = (props)=>{
                       />
                     </svg>
                   </div>
-                  <div className="continent">{props.data.Location}</div>
+                  <div className="continent">{props.data.location}</div>
                 </div>
                 <div className="d-flex gap-3">
                   <div className="offer-price">{props.data.packageSale}</div>
