@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Dropdown from "../Dropdown";
-import { BrowserRouter as Router, Route,Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const Navbar = () => {
+  const hamurgerButtonElement = useRef(null);
+  const editingDivElement = useRef(null);
+
+  useEffect(() => {
+    if (hamurgerButtonElement.current && editingDivElement.current) {
+      // editingDivElement.current.classList.add("show");
+      // hamurgerButtonElement.current.classList.add("collapsed");
+      // hamurgerButtonElement.current.ariaExpanded = false;
+      // setTimeout(() => {
+      //   editingDivElement.current.classList.remove("show");
+      // }, 1000);
+      hamurgerButtonElement.current.click()
+      hamurgerButtonElement.current.click()
+    }
+  }, []);
   return (
     <div className="container py-5">
       <div className="row justify-content-between">
@@ -17,26 +32,46 @@ const Navbar = () => {
         <div className="navigation col-3 col-xl-6">
           <div className="hamburger-btn navbar-toggler">
             <button
-              className="btn d-block d-xl-none navbar-toggler"
+              className="btn d-block d-xl-none navbar-toggler collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#editing"
               aria-controls="editing"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              ref={hamurgerButtonElement}
             >
               <div className="line"></div>
               <div className="line"></div>
               <div className="line"></div>
             </button>
           </div>
-          <div className="d-xl-block navbar-collapse" id="editing">
+          <div
+            className="d-xl-block navbar-collapse show"
+            id="editing"
+            ref={editingDivElement}
+          >
             <ul className="navbar-nav d-xl-flex justify-content-xl-evenly flex-xl-row text-center maging">
               <li className="nav-item nav-pad navigatorz hovering">
-                <Link className="nav-link active" aria-current="page" to="/dashboard" style={{color: "white"}} >Dashboard</Link>
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/dashboard"
+                  style={{ color: "white" }}
+                >
+                  Dashboard
+                </Link>
               </li>
               <li className="nav-item nav-pad navigatorz hovering">
-                <Link rel="stylesheet"className="nav-link active" aria-current="page" to="/" style={{color: "white"}}>Home</Link>
+                <Link
+                  rel="stylesheet"
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/"
+                  style={{ color: "white" }}
+                >
+                  Home
+                </Link>
               </li>
               <li className="nav-item nav-pad navigatorz hovering">
                 <a className="nav-link" href="#">

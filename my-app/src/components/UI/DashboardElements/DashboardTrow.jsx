@@ -9,17 +9,15 @@ const DashboardTrow = (props) => {
   return (
     <tr>
       <td>
-        <span className="custom-checkbox">
-          <input type="checkbox" id="checkbox1" name="options[]" value="1" />
-          <label htmlFor="checkbox1"></label>
-        </span>
+        
       </td>
       <td>{props.data.cityName}</td>
-      <td>{props.data.description}</td>
+      <td><img src={props.data.imageCity} style={{width: '80px' , height: '100px'}} alt="" /></td>
+      <td><img src={props.data.imageFlag} style={{width: '80px' , height: '100px'}} alt="" /></td>
       <td>{props.data.packageSale}</td>
       <td>
         <a
-          href="#editEmployeeModal"
+          href="#editCardModal"
           className="edit"
           data-toggle="modal"
           onClick={sendDataToParent}
@@ -29,7 +27,7 @@ const DashboardTrow = (props) => {
           </i>
         </a>
         <a
-          href="#deleteEmployeeModal"
+          href="#deleteCardModal"
           className="delete"
           data-toggle="modal"
           onClick={sendDataToParent}

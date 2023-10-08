@@ -6,7 +6,7 @@ import * as firebase from "firebase/app";
 import firebaseConfig from "./data/fireBase";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import x from "./test";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +23,7 @@ function App() {
  
   const app = useMemo(() => {
     return firebase.initializeApp(firebaseConfig);
-  });
+  },[]);
   // useEffect(() => {
   //   // Initialize Firebase with the configuration
   //   firebase.initializeApp(firebaseConfig);

@@ -15,8 +15,8 @@ const Cards = (props) => {
       </div>
       <div className="row rowing">
         
-              {props.data.map((x) => (
-                <Card key={x.id} data={x}></Card>
+              {props.data.map((x,i) => (
+                <Card key={i}  data={x}></Card>
               ))}
             </div>
           </div>
